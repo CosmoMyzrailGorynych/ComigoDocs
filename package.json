@@ -1,0 +1,22 @@
+{
+  "name": "comigodocs",
+  "version": "1.0.0",
+  "description": "No bullshit doc site generator",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cosmo Myzrail Gorynych",
+  "license": "ISC",
+  "dependencies": {
+    "@ffflorian/file-index": "^2.1.0",
+    "front-matter-markdown": "^0.4.4",
+    "fs-extra": "^8.1.0",
+    "markdown-it": "^10.0.0",
+    "pug": "^2.0.4",
+    "stylus": "^0.54.7"
+  }
+}
