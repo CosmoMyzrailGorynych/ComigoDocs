@@ -1,0 +1,36 @@
+body
+    font-family 'Merriweather Sans', 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif
+    font-size 18px
+    line-height 1.4
+    color ctext
+
+h1, h2, h3, h4, h5, h6
+    font-family 'Merriweather', 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif
+    color cheader
+for i in 1 2 3 4 5 6
+    h{i}
+        font-size 3em * ((5 - i + 1) / 5) + 1em * ((i - 1) / 5)
+        margin-top (round(@font-size) / 4)
+        margin-bottom (round(@font-size) / 8)
+
+p
+    margin 0.7em 0
+
+a
+    color cheader
+
+ul, ol
+    margin 0.7em 0
+    padding-inline-start 1.4em
+    position relative
+li
+    margin 0.35em 0
+    position relative
+
+pre
+    overflow auto
+    max-height 15em
+    padding 1.4em
+    margin 1.4em -1.4em
+    border-radius br
+    border 1px solid bl

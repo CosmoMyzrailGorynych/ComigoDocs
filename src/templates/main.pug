@@ -1,16 +1,39 @@
+mixin ToC(toc)
+    ol
+        each link in toc
+            li
+                a(href=('#'+link.hash))=link.title
+                if link.contents
+                    +ToC(link.contents)
+mixin navPiece(nav)
+    ul
+        each link in nav
+            li
+                a(href=link.permalink)=link.title
+                if link.children
+                    +navPiece(link.children)
+
 <!DOCTYPE html>
 html(lang="en")
     head
         include ./../includes/head.pug
         title #{page.title} — #{site.title}
     body
-        article
-            h1=page.title
-            if page.content
-                | !{page.content}
-        if (page.children && page.children.length)
-            .childList
-                each child in page.children
-                    a(href=page.permalink)
-                        article
-                            h2 {page.title}
+        if (page.toc)
+            aside.aToC
+                nav
+                    +ToC(page.toc)
+        main
+            article
+                h1=page.title
+                if page.content
+                    | !{page.content}
+            if (children && children.length)
+                .aChildList
+                    each child in children
+                        a(href=('/'+child.permalink))
+                            article
+                                h3=child.title
+        aside.aNavSidebar
+            nav
+                +navPiece(site.navigation)
