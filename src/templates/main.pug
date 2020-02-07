@@ -9,7 +9,10 @@ mixin navPiece(nav)
     ul
         each link in nav
             li
-                a(href=link.permalink)=link.title
+                if (link.permalink === page.permalink)
+                    a(href=link.permalink).active=link.title
+                else
+                    a(href=link.permalink)=link.title
                 if link.children
                     +navPiece(link.children)
 
@@ -17,23 +20,26 @@ mixin navPiece(nav)
 html(lang="en")
     head
         include ./../includes/head.pug
-        title #{page.title} — #{site.title}
+        title #{page.title}
     body
-        if (page.toc)
-            aside.aToC
+        script(async type="text/javascript" src="/bundle.js")
+        .aRootWrapper
+            main
+                article
+                    if (!page.hasOwnTitle)
+                        h1=page.title
+                    if (page.content)
+                        | !{page.content}
+                if (children && children.length)
+                    .aChildList
+                        each child in children
+                            a(href=(child.permalink))
+                                article
+                                    h3=child.title
+            aside.aNavSidebar
                 nav
-                    +ToC(page.toc)
-        main
-            article
-                h1=page.title
-                if page.content
-                    | !{page.content}
-            if (children && children.length)
-                .aChildList
-                    each child in children
-                        a(href=('/'+child.permalink))
-                            article
-                                h3=child.title
-        aside.aNavSidebar
-            nav
-                +navPiece(site.navigation)
+                    +navPiece(site.navigation)
+            if (page.toc)
+                aside.aToC
+                    nav
+                        +ToC(page.toc)

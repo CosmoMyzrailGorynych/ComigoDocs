@@ -3,3 +3,23 @@ p, h1, h2, h3, h4, h5, h6, ul, ol, li, pre
         margin-top 0
     &:last-child
         margin-bottom 0
+svg, svg use *
+    stroke currentColor
+    fill none
+    stroke-width 2px
+
+button
+    cursor pointer
+    padding 0.7em 1.4em
+    background white
+    background var(--panel-light)
+    {bs}
+    {trans}
+    &:hover
+        {bsa}
+    border-radius br
+    color ctext
+    color var(--ctext)
+    font inherit
+    svg:only-child
+        vertical-align bottom // magic!

@@ -19,13 +19,16 @@
     "browser-sync": "^2.26.7",
     "front-matter-markdown": "^0.4.4",
     "fs-extra": "^8.1.0",
+    "glob": "^7.1.6",
     "highlight.js": "^9.18.1",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5",
+    "multistream": "^4.0.0",
     "progress": "^2.0.3",
     "pug": "^2.0.4",
     "slug": "^2.1.1",
     "stylus": "^0.54.7",
+    "svgstore": "^3.0.0-2",
     "watchr": "^5.6.0",
     "yargs": "^15.1.0"
   }

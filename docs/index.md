@@ -2,9 +2,9 @@
 
 Eum qui facere dolorum aliquid ducimus enim. Eaque perferendis ut totam illum ut. Deserunt dicta omnis magnam officiis rerum quod voluptatem. Aliquid et veniam architecto consequatur libero esse occaecati. Voluptates et rerum deleniti qui.
 
-* Id autem aut modi cum alias perspiciatis minima libero.
-* Unde optio veritatis aut voluptatem sequi modi sit.
-* Eos qui nobis temporibus cupiditate tenetur.
+* Id autem aut modi cum [alias perspiciatis minima libero](/A-root-document.md).
+* Unde optio veritatis aut [voluptatem sequi modi sit](./A-magic-folder/index.md).
+* Eos qui nobis temporibus [cupiditate tenetur](./A-regular-folder).
 
 Neque officia ea explicabo ab harum eos. Laudantium et expedita aut est soluta omnis. Est aut neque placeat possimus suscipit soluta. Sit minus harum optio. Est doloribus nostrum itaque ab ut.
 

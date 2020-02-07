@@ -1,5 +1,6 @@
 ctext = #464650
 cheader = black
+snow = #f5f5f5
 
 br = 0.25em
 bl = #c6c6c6
@@ -10,8 +11,23 @@ bsa =
 trans =
     transition 0.25s ease all
 
+body
+    --ctext ctext
+    --cheader cheader
+    --border-light bl
+    --panel-light white
+    --panel-dark snow
+    &.dark
+        --ctext #a2a2ac
+        --cheader  #d2cece
+        --border-light #333a3f
+        --panel-light #1c1c1f
+        --panel-dark #181719
+
+
 @require '3rdParty/*.styl'
 
 @require elements
-@require basicLayout
 @require typography
+@require basicLayout
+@require code

@@ -1,8 +1,12 @@
-# ComigoDocs
+<div style="text-align:center">
+    <h1>ComigoDocs</h1>
+    <img alt="ComigoDocs logo" src="logo.png">
+    <hr>
+</div>
 
 ComigoDocs is an open-source documentation/static site generator. It aims to require 0 configs, and reduce the bullshit required to get a working, fully functional site with minimal maintenance in sense of updating its content.
 
-Docs are generated from a folder of `.md` file (Markdown documents). Each `.md` file becomes a page, and folders with other files and folders will have one as well, with a nice listing of child pages. If you put an `index.md` file inside a folder, its content will be shown on the top of the folder's children listing. This all allows you to freely define structure: it may be flat, it can be one book with chapters split into parts, it can be a stack of such books, or any mixed variant. The only restriction is your imagination, which is the maximum call stack for a recursive function in js. (500 levels, I guess?)
+Docs are generated from a folder of `.md` file (Markdown documents). Each `.md` file becomes a page, and folders with other files and folders will have one as well, with a nice listing of child pages. If you put an `index.md` file inside a folder, its content will be shown on the top of the folder's children listing. This all allows you to freely define structure: it may be flat, it can be one book with chapters split into parts, it can be a stack of such books, or any mixed variant. The only restriction is your imagination, and your imagination is the maximum call stack for a recursive function in js. (500 levels, I guess?)
 
 ## This all is a WIP, though
 
