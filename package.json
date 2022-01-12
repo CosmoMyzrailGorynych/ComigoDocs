@@ -21,7 +21,7 @@
     "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
     "highlight.js": "^10.4.1",
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^5.2.5",
     "multistream": "^4.0.0",
     "progress": "^2.0.3",
